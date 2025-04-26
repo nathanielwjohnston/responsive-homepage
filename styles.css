@@ -39,6 +39,46 @@ h6 {
   overflow-wrap: break-word;
 }
 
+/* General */
+
+.social-links {
+  margin-top: 0.3rem;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 0.6rem;
+}
+
+/* Header */
+
+header {
+  margin: 1.6rem;
+}
+
+header .person-container {
+  position: relative;
+}
+
+header .person-container h1 {
+  color: black;
+  position: absolute;
+  bottom: 0%;
+  text-align: left;
+  font-size: 4.5rem;
+  margin-left: 1rem;
+}
+
+header h1 {
+  text-align: center;
+}
+
+header img {
+  margin-bottom: 1rem;
+}
+
+header .social-links {
+  justify-content: center;
+}
+
 /* Projects */
 
 main h1 {
@@ -144,11 +184,4 @@ footer .telephone::before {
 
 footer .email::before {
   background-image: url(assets/email.svg);
-}
-
-footer .social-links {
-  margin-top: 0.3rem;
-  font-size: 1.5rem;
-  display: flex;
-  gap: 0.6rem;
 }
