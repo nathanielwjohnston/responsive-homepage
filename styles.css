@@ -93,3 +93,62 @@ main h1 {
 .project-link .github-link {
   height: 1.8rem;
 }
+
+/* Footer */
+
+footer {
+  background-color: #b0c4de;
+  padding-top: 1rem;
+}
+
+footer h1 {
+  text-align: center;
+}
+
+footer .contact-details {
+  margin: 1rem;
+  margin-bottom: 2.6rem;
+}
+
+footer .contact-details > * {
+  margin-bottom: 1rem;
+}
+
+footer .contact-info {
+  display: grid;
+  gap: 0.3rem;
+}
+
+footer .telephone,
+footer .email {
+  display: flex;
+  align-items: center;
+}
+
+footer .telephone::before,
+footer .email::before {
+  content: "";
+  display: inline-block;
+  background-size: 1em;
+  background-image: url(assets/email.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1em;
+  width: 1em;
+  margin-right: 0.2rem;
+}
+
+footer .telephone::before {
+  background-image: url(assets/phone.svg);
+}
+
+footer .email::before {
+  background-image: url(assets/email.svg);
+}
+
+footer .social-links {
+  margin-top: 0.3rem;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 0.6rem;
+}
