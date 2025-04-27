@@ -81,15 +81,24 @@ header .social-links {
 
 /* Projects */
 
+main {
+  margin: 0.6rem;
+}
+
 main h1 {
-  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
 }
 
 .project {
   border: 1px solid;
-  margin: 1rem;
   display: grid;
-  grid-template-rows: 16em auto;
+  grid-template-rows: 16em 12em;
 }
 
 .project-image {
@@ -99,6 +108,7 @@ main h1 {
   font-size: 3.2rem;
   display: grid;
   align-items: center;
+  padding: 1rem;
 }
 
 .project-info {
@@ -184,4 +194,28 @@ footer .telephone::before {
 
 footer .email::before {
   background-image: url(assets/email.svg);
+}
+
+/* Media Queries */
+
+@media (max-width: 660px) {
+  main h1 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 661px) {
+  main {
+    margin: 2rem;
+  }
+
+  .projects {
+    gap: 2rem 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
