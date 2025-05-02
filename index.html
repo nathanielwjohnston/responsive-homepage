@@ -14,25 +14,37 @@
   <body>
     <header>
       <div class="person-container">
-        <h1>Sergey Ropinto</h1>
-        <img src="assets/man-at-computer-small.jpg" alt="Sergey Ropinto" />
+        <div class="name-container">
+          <h1>Sergey Ropinto</h1>
+        </div>
+        <picture>
+          <source
+            media="(max-width: 680px)"
+            srcset="assets/man-at-computer-small.jpg"
+          />
+          <source
+            media="(min-width: 681px)"
+            srcset="assets/man-at-computer.jpg"
+          />
+          <img src="assets/man-at-computer.jpg" alt="Sergey Ropinto" />
+        </picture>
       </div>
-      <h1>About me</h1>
-      <div class="info-container">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan
-          interdum luctus. Donec euismod quam vel lorem cursus porta. Praesent
-          egestas rutrum commodo. In arcu est, pretium eu quam quis, consectetur
-          tincidunt mi. In bibendum ipsum nibh. Curabitur at ante non sem porta
-          dignissim. Pellentesque suscipit faucibus odio, nec pretium leo
-          convallis vitae. Donec pulvinar mattis erat, ut pharetra quam viverra
-          vel. Donec tincidunt orci ac neque pretium eleifend. Nullam
-          condimentum blandit enim sed placerat. Mauris nec ante quis purus
-          elementum tincidunt. Nam pellentesque aliquet turpis. Nunc semper
-          massa nec enim euismod, vitae elementum lectus eleifend.
-        </p>
-      </div>
-      <div class="social-links">
+      <div class="about-container">
+        <h1>About me</h1>
+        <div class="info-container">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            accumsan interdum luctus. Donec euismod quam vel lorem cursus porta.
+            Praesent egestas rutrum commodo. In arcu est, pretium eu quam quis,
+            consectetur tincidunt mi. In bibendum ipsum nibh. Curabitur at ante
+            non sem porta dignissim. Pellentesque suscipit faucibus odio, nec
+            pretium leo convallis vitae. Donec pulvinar mattis erat, ut pharetra
+            quam viverra vel. Donec tincidunt orci ac neque pretium eleifend.
+            Nullam condimentum blandit enim sed placerat. Mauris nec ante quis
+            purus elementum tincidunt. Nam pellentesque aliquet turpis. Nunc
+            semper massa nec enim euismod, vitae elementum lectus eleifend.
+          </p>
+        </div>
         <div class="social-links">
           <i class="devicon-github-original github-icon colored"></i>
           <i class="devicon-linkedin-plain linkedin-icon colored"></i>

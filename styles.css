@@ -54,6 +54,14 @@ h6 {
 
 /* Header */
 
+.name-container {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  margin-bottom: 1em;
+}
+
 header {
   margin: 1.6rem;
 }
@@ -63,12 +71,9 @@ header .person-container {
 }
 
 header .person-container h1 {
-  color: black;
-  position: absolute;
-  bottom: 0%;
+  color: white;
   text-align: left;
-  font-size: 4.5rem;
-  margin-left: 1rem;
+  font-size: 4rem;
 }
 
 header h1 {
@@ -234,7 +239,7 @@ footer .email::before {
     padding-top: 3rem;
   }
 
-  h1 {
+  footer h1 {
     grid-area: header;
     justify-self: start;
     align-self: end;
@@ -249,6 +254,56 @@ footer .email::before {
     grid-area: picture;
     width: 60%;
     place-self: center;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1349px) {
+  /* Header */
+
+  header {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  header .person-container .name-container h1 {
+    color: black;
+  }
+
+  .person-container {
+    float: left;
+  }
+
+  .name-container {
+    position: absolute;
+    translate: 90% -1em;
+    /* Reset Changes */
+    background: none;
+    top: 0;
+    margin: 0;
+  }
+
+  .person-container picture img {
+    width: 30em;
+    margin: 0;
+  }
+
+  .person-container {
+    margin-top: -5em;
+    margin-left: -4em;
+    margin-right: 1em;
+  }
+
+  header .social-links {
+    display: none;
+  }
+
+  .about-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 8rem;
+    border: 1px solid;
+    padding: 2rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -271,5 +326,42 @@ footer .email::before {
 
   footer picture {
     width: 80%;
+  }
+}
+
+@media (min-width: 1350px) {
+  /* Header */
+
+  header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .name-container h1 {
+    margin-left: 0.4rem;
+  }
+
+  .about-container h1 {
+    text-align: left;
+  }
+
+  header picture {
+    height: 100%;
+    width: auto;
+  }
+
+  .about-container {
+    align-self: center;
+    border: 1px solid;
+    padding: 1rem;
+    border-left: none;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  header .social-links {
+    justify-content: end;
   }
 }
