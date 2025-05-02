@@ -41,6 +41,10 @@ h6 {
 
 /* General */
 
+:root {
+  font-size: 1.2rem;
+}
+
 .social-links {
   margin-top: 0.3rem;
   font-size: 1.5rem;
@@ -198,13 +202,17 @@ footer .email::before {
 
 /* Media Queries */
 
-@media (max-width: 660px) {
+@media (max-width: 680px) {
+  /* Projects */
+
   main h1 {
     text-align: center;
   }
 }
 
-@media (min-width: 661px) {
+@media (min-width: 681px) {
+  /* Projects */
+
   main {
     margin: 2rem;
   }
@@ -212,10 +220,56 @@ footer .email::before {
   .projects {
     gap: 2rem 1.5rem;
   }
+
+  /* Footer */
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "header picture"
+      "contact picture";
+    padding: 2rem;
+    padding-top: 3rem;
+  }
+
+  h1 {
+    grid-area: header;
+    justify-self: start;
+    align-self: end;
+    margin-left: 1rem;
+  }
+
+  .contact-details {
+    grid-area: contact;
+  }
+
+  footer picture {
+    grid-area: picture;
+    width: 60%;
+    place-self: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  /* Footer */
+
+  footer {
+    font-size: 1.4rem;
+  }
 }
 
 @media (min-width: 1200px) {
+  /* Projects */
+
   .projects {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Footer */
+
+  footer picture {
+    width: 80%;
   }
 }

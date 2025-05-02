@@ -174,7 +174,14 @@
           </div>
         </div>
       </div>
-      <img src="assets/man-on-phone-small.jpg" alt="Sergey Ropinto" />
+      <picture>
+        <source
+          media="(max-width: 1199px)"
+          srcset="assets/man-on-phone-small.jpg"
+        />
+        <source media="(min-width: 1200px)" srcset="assets/man-on-phone.jpg" />
+        <img src="assets/man-on-phone.jpg" alt="Sergey Ropinto" />
+      </picture>
     </footer>
   </body>
 </html>
