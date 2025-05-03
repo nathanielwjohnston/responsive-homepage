@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* ==========================================================================
   Reset 
   ========================================================================== */
@@ -43,6 +45,7 @@ h6 {
 
 :root {
   font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .social-links {
@@ -134,7 +137,7 @@ main h1 {
   background-color: lightcoral;
   color: white;
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 250%;
   display: grid;
   align-items: center;
   padding: 1rem;
@@ -233,6 +236,10 @@ footer .email::before {
   main h1 {
     text-align: center;
   }
+
+  .person-container .name-container h1 {
+    font-size: 2.6rem;
+  }
 }
 
 @media (min-width: 681px) {
@@ -287,6 +294,8 @@ footer .email::before {
 
   header .person-container .name-container h1 {
     color: black;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+      1px 1px 0 #ffffff;
   }
 
   .person-container {
