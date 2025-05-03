@@ -54,6 +54,19 @@ h6 {
 
 /* Header */
 
+header::before {
+  content: "";
+  position: absolute;
+  background-color: #b0c4de;
+  width: 100%;
+  height: 150%;
+  left: 0;
+  bottom: 0;
+  margin-top: -10em;
+  transform: skewY(-8deg);
+  z-index: -1;
+}
+
 .name-container {
   position: absolute;
   bottom: 0;
@@ -62,8 +75,15 @@ h6 {
   margin-bottom: 1em;
 }
 
+.about-container {
+  background-color: white;
+  box-shadow: 0px 0px 22px 2px rgba(130, 130, 130, 0.75);
+  padding: 1rem;
+}
+
 header {
   margin: 1.6rem;
+  margin-bottom: 10rem;
 }
 
 header .person-container {
@@ -301,7 +321,6 @@ footer .email::before {
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 8rem;
-    border: 1px solid;
     padding: 2rem;
     font-size: 1.2rem;
   }
@@ -354,9 +373,7 @@ footer .email::before {
 
   .about-container {
     align-self: center;
-    border: 1px solid;
     padding: 1rem;
-    border-left: none;
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
